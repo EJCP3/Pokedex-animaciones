@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/pokeball.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Pokedex</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+   
+    <div class="contenedor">
+    <aside>
+      <div class="main-img">
+        <img
+          class="main-img-pokeball"
+          src="assets/img/pokeball_BlancoyNegro.png"
+          alt="pokeball Blanco Negro"
+        />
+        <div class="main-img-contenido">
+          <img
+          class="main-img-contenido_profesorOak"
+          src="assets/img/Profesor_Oak.png"
+          alt="Profesor Oak"
+        />
+        <h2 class="main-img-contenido_nombre">Profesor Oak</h2>
+        </div>
+        
+      </div>
+    </aside>
+    <header>
+      <nav class="main-nav">
+        <ul class="main-menu">
+          <li class="main-menu-item">
+            <a class="main-menu_link" href="#">Home</a>
+          </li>
+          <li class="main-menu-item">
+            <a class="main-menu_link link-activo" id="pokedex">Pokedex</a>
+          </li>
+          <li class="main-menu-item">
+            <a class="main-menu_link" href="#">Curiosidades</a>
+          </li>
+          <li class="main-menu-item">
+            <a class="main-menu_link" href="#">Tu Pokedex</a>
+          </li>
+        </ul>
+        <div class="main-logo">
+          <img src="assets/img/logo.png" alt="" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="main-home">
+
+        <div class="main-home-titulo">
+          <span>Aquí Inicia tu historia</span>
+          <h1 class="main-home-titulo_h1">Entrenador Pokémon!!!</h1>
+        </div>
+       
+
+        <p class="main-home-parrafo">
+          -Aquí hay tres <span>Pokémon.</span> Están dentro de las
+          <span>Poké Balls.</span> Elige cuál te gusta más.
+        </p>
+      </section>
+      <footer>
+        <section class="footer-pokeball">
+          <img class="footer-pokeball-mesa" src="assets/img/Mesa.png" alt="Mesa">
+          <picture  class="footer-pokeball-mesa-container">
+           
+            <img id="btnPokemon"  class="footer-pokeball-mesa-container_Bulbasaur pokemon"   src="assets/img/pokeball.png" alt="Bulbasaur">
+            <img id="btnPokemon" class="footer-pokeball-mesa-container_Charmander pokemon"  src="assets/img/pokeball.png" alt="Charmander">
+            <img id="btnPokemon" class="footer-pokeball-mesa-container_Squirtle pokemon"     src="assets/img/pokeball.png" alt="Squirtle">
+          
+          
+          </picture>
+        </section>
+        <picture class="footer-img">
+          <img src="assets/img/Pokeball_color.png" alt="pokeball">
+        </picture>
+      </footer>
+      
+      <div class="loader">
+        <img src="assets/img/pokeball-inicio.png" alt="">
+      </div>
+      
+    </main>
+   
+    </div>
+
+  <div id="modalPokemon" class="modal">  
+
+    <section  class="modal-container Bulbasaur">
+  
+      <article class="modal-container-header">
+        <div>
+          <img id="close" class="modal-close" src="assets/img/arrow_back.png">
+          <h1 class="modal-container-header_titulo">Bulbasaur</h1>
+        </div>
+        <p class="modal-container-header_numero">#001</p>
+        <img class="modal-img-pokeball" src="assets/img/pokeball-pokemones.png" alt="">
+      </article>
+      <section class="modal-container-main">
+        <img class="modal-container-main-imgBulbasaur" src="assets/img/Bulbasaur.png" alt="">
+        <div class="modal-container-main-tipo">
+          <p class="modal-container-main-tipo_planta tipo">Planta</p>
+          <p class="modal-container-main-tipo_veneno tipo">Veneno</p>
+        </div>
+        <h2 class="modal-container-main-pokedexData">Pokédex data</h2>
+
+        <div class="modal-container-main-data">
+
+          <article class="modal-container-main-data_peso">
+            <span></span>
+            <p>6,9kg</p>
+            <h6>Peso</h6>
+           </article>
+           <div></div>
+          <article class="modal-container-main-data_altura">
+            <span></span>
+            <p>0,7m</p>
+            <h6>Altura</h6>
+          </article>
+          <div></div>
+          <article class="modal-container-main-data_habilidades">
+            <p>Clorofilia</p>
+            <p>Crecer demasiado</p>
+            <h6>Habilidades</h6>
+          </article>
+          <div></div>
+
+          <article class="modal-container-bulbusaur-main-data_debilidad debilidad">
+            <p>Volador</p>
+            <p>Fuego</p>
+           <h6>Debilidad</h6>
+          </article>
+          
+        </div>
+        
+        <p class="modal-container-main-descripción">Hay una semilla de planta en su espalda desde el día 
+          en que nació este Pokémon. La semilla crece lentamente.</p>
+
+
+      <article class="modal-container-footer ">
+
+        <h2 class="modal-container-footer-titulo bulbasaur-color ">Estadísticas básicas</h2>
+
+        <article class="modal-container-footer-estadisticas">
+            <ul>
+            <li class="modal-container-footer-estadisticas_tipo">HP</li>
+            <li class="modal-container-footer-estadisticas_tipo" >ATK</li>
+            <li class="modal-container-footer-estadisticas_tipo">DEF</li>
+            <li class="modal-container-footer-estadisticas_tipo">SATK</li>
+            <li class="modal-container-footer-estadisticas_tipo">SEDF</li>
+            <li class="modal-container-footer-estadisticas_tipo">SPD</li>
+          </ul>
+          <div class="modal-container-footer-estadisticas_barrita">
+
+          </div>
+          <ul>
+            <li class="modal-container-footer-estadisticas_valor">045</li>
+            <li class="modal-container-footer-estadisticas_valor">049</li>
+            <li class="modal-container-footer-estadisticas_valor">049</li>
+            <li class="modal-container-footer-estadisticas_valor">065</li>
+            <li class="modal-container-footer-estadisticas_valor">065</li>
+            <li class="modal-container-footer-estadisticas_valor">045</li>
+          </ul>
+
+          <div>
+            <progress class="modal-container-footer-estadisticas_barra barra-bulbusaur" max="294" value="45"></progress>
+            <progress class="modal-container-footer-estadisticas_barra barra-bulbusaur" max="216" value="49"></progress>
+            <progress class="modal-container-footer-estadisticas_barra barra-bulbusaur" max="216" value="49"></progress>
+            <progress class="modal-container-footer-estadisticas_barra barra-bulbusaur" max="251" value="65"></progress>
+            <progress class="modal-container-footer-estadisticas_barra barra-bulbusaur" max="251" value="65"></progress>
+            <progress class="modal-container-footer-estadisticas_barra barra-bulbusaur" max="207" value="45"></progress>
+          </div>
+            <ul class="contenedor-max">
+          <li class="modal-container-footer-estadisticas-max">294</li>
+          <li class="modal-container-footer-estadisticas-max">216</li>
+          <li class="modal-container-footer-estadisticas-max">216</li>
+          <li class="modal-container-footer-estadisticas-max">251</li>
+          <li class="modal-container-footer-estadisticas-max">251</li>
+          <li class="modal-container-footer-estadisticas-max">207</li>
+          <li class="modal-container-footer-estadisticas-max">Max</li>
+            </ul>
+        </article>
+
+       </article>
+      </section>
+    
+    </div> 
+
+    <div id="modalPokemon" class="modal">  
+      <section class="modal-container Charmander">
+           
+        <article class="modal-container-header">
+          <div>
+            <img id="close" class="modal-close" src="assets/img/arrow_back.png">
+            <h1 class="modal-container-header_titulo">Charmander</h1>
+          </div>
+          <p class="modal-container-header_numero">#004</p>
+          <img class="modal-img-pokeball" src="assets/img/pokeball-pokemones.png" alt="">
+        </article>
+        <section class="modal-container-main">
+          <img class="modal-container-main-imgCharmander" src="assets/img/Charmander.png" alt="">
+          <div class="modal-container-main-tipo">
+            <p class="modal-container-main-tipo_fuego tipo">Fuego</p>
+          </div>
+          <h2 class="modal-container-main-pokedexData charmander-color">Pokédex data</h2>
+
+          <div class="modal-container-main-data">
+
+            <article class="modal-container-main-data_peso">
+              <span></span>
+              <p>8,5kg</p>
+              <h6>Peso</h6>
+             </article>
+             <div></div>
+            <article class="modal-container-main-data_altura">
+              <span></span>
+              <p>0,6m</p>
+              <h6>Altura</h6>
+            </article>
+            <div></div>
+            <article class="modal-container-main-data_habilidades">
+              <p>Resplandor</p>
+              <p>Energía solar</p>
+              <h6>Habilidades</h6>
+            </article>
+            <div></div>
+
+            <article class="modal-container-charmander-main-data_debilidad debilidad">
+              <p>Agua</p>
+              <p>Roca</p>
+             <h6>Debilidad</h6>
+            </article>
+            
+          </div>
+          
+          <p class="modal-container-main-descripción">Tiene preferencia por las cosas calientes. Cuando llueve, se dice que sale vapor de la punta de su cola.</p>
+
+
+        <article class="modal-container-footer">
+
+          <h2 class="modal-container-footer-titulo charmander-color">Estadísticas básicas</h2>
+
+          <article class="modal-container-footer-estadisticas ">
+            <ul>
+              <li class="modal-container-footer-estadisticas_tipo  charmander-color">HP</li>
+              <li class="modal-container-footer-estadisticas_tipo charmander-color" >ATK</li>
+              <li class="modal-container-footer-estadisticas_tipo charmander-color">DEF</li>
+              <li class="modal-container-footer-estadisticas_tipo charmander-color">SATK</li>
+              <li class="modal-container-footer-estadisticas_tipo charmander-color">SEDF</li>
+              <li class="modal-container-footer-estadisticas_tipo charmander-color">SPD</li>
+            </ul>
+            <div class="modal-container-footer-estadisticas_barrita">
+
+            </div>
+            <ul>
+              <li class="modal-container-footer-estadisticas_valor">039</li>
+              <li class="modal-container-footer-estadisticas_valor">052</li>
+              <li class="modal-container-footer-estadisticas_valor">043</li>
+              <li class="modal-container-footer-estadisticas_valor">060</li>
+              <li class="modal-container-footer-estadisticas_valor">050</li>
+              <li class="modal-container-footer-estadisticas_valor">065</li>
+            </ul>
+
+            <div>
+              <progress class="modal-container-footer-estadisticas_barra barra-charmander" max="282" value="39"></progress>
+              <progress class="modal-container-footer-estadisticas_barra barra-charmander " max="223" value="52"></progress>
+              <progress class="modal-container-footer-estadisticas_barra barra-charmander  " max="203" value="43"></progress>
+              <progress class="modal-container-footer-estadisticas_barra barra-charmander" max="240" value="60"></progress>
+              <progress class="modal-container-footer-estadisticas_barra barra-charmander" max="218" value="50"></progress>
+              <progress class="modal-container-footer-estadisticas_barra barra-charmander" max="251" value="65"></progress>
+            </div>
+              <ul class="contenedor-max">
+            <li class="modal-container-footer-estadisticas-max">282</li>
+            <li class="modal-container-footer-estadisticas-max">223</li>
+            <li class="modal-container-footer-estadisticas-max">203</li>
+            <li class="modal-container-footer-estadisticas-max">240</li>
+            <li class="modal-container-footer-estadisticas-max">218</li>
+            <li class="modal-container-footer-estadisticas-max">251</li>
+            <li class="modal-container-footer-estadisticas-max">Max</li>
+              </ul>
+          </article>
+
+         </article>
+        </section>
+      </div>
+
+
+      <div id="modalPokemon" class="modal">  
+        
+        <section class="modal-container squirtle">
+               
+          <article class="modal-container-header">
+            <div>
+              <img id="close" class="modal-close" src="assets/img/arrow_back.png"></img>
+              <h1 class="modal-container-header_titulo">Charmander</h1>
+            </div>
+            <p class="modal-container-header_numero">##007</p>
+            <img class="modal-img-pokeball" src="assets/img/pokeball-pokemones.png" alt="">
+          </article>
+          <section class="modal-container-main">
+            <img class="modal-container-main-imgSquirtle" src="assets/img/Squirtle.png" alt="">
+            <div class="modal-container-main-tipo">
+              <p class="modal-container-main-tipo_agua tipo">Agua</p>
+            </div>
+            <h2 class="modal-container-main-pokedexData squirtle-color">Pokédex data</h2>
+  
+            <div class="modal-container-main-data">
+  
+              <article class="modal-container-main-data_peso">
+                <span></span>
+                <p>9,0kg</p>
+                <h6>Peso</h6>
+               </article>
+               <div></div>
+              <article class="modal-container-main-data_altura">
+                <span></span>
+                <p>0,5m</p>
+                <h6>Altura</h6>
+              </article>
+              <div></div>
+              <article class="modal-container-main-data_habilidades">
+                <p>Torrente</p>
+                <p>plato de lluvia</p>
+                <h6>Habilidades</h6>
+              </article>
+              <div></div>
+  
+              <article class="modal-container-squirtle-main-data_debilidad debilidad">
+                <p>Planta</p>
+                <p>Eléctric</p>
+               <h6>Debilidad</h6>
+              </article>
+              
+            </div>
+            
+            <p class="modal-container-main-descripción">Cuando retrae su largo cuello dentro de su caparazón, arroja agua con fuerza vigorosa.</p>
+  
+  
+          <article class="modal-container-footer">
+  
+            <h2 class="modal-container-footer-titulo squirtle-color">Estadísticas básicas</h2>
+  
+            <article class="modal-container-footer-estadisticas ">
+              <ul>
+                <li class="modal-container-footer-estadisticas_tipo  squirtle-color">HP</li>
+                <li class="modal-container-footer-estadisticas_tipo squirtle-color" >ATK</li>
+                <li class="modal-container-footer-estadisticas_tipo squirtle-color">DEF</li>
+                <li class="modal-container-footer-estadisticas_tipo squirtle-color">SATK</li>
+                <li class="modal-container-footer-estadisticas_tipo squirtle-color">SEDF</li>
+                <li class="modal-container-footer-estadisticas_tipo squirtle-color">SPD</li>
+              </ul>
+              <div class="modal-container-footer-estadisticas_barrita">
+  
+              </div>
+              <ul>
+                <li class="modal-container-footer-estadisticas_valor">044</li>
+                <li class="modal-container-footer-estadisticas_valor">048</li>
+                <li class="modal-container-footer-estadisticas_valor">065</li>
+                <li class="modal-container-footer-estadisticas_valor">050</li>
+                <li class="modal-container-footer-estadisticas_valor">064</li>
+                <li class="modal-container-footer-estadisticas_valor">043</li>
+              </ul>
+  
+              <div>
+                <progress class="modal-container-footer-estadisticas_barra barra-squirtle" max="292" value="44"></progress>
+                <progress class="modal-container-footer-estadisticas_barra barra-squirtle " max="214" value="48"></progress>
+                <progress class="modal-container-footer-estadisticas_barra barra-squirtle  " max="251" value="65"></progress>
+                <progress class="modal-container-footer-estadisticas_barra barra-squirtle" max="218" value="50"></progress>
+                <progress class="modal-container-footer-estadisticas_barra barra-squirtle" max="249" value="64"></progress>
+                <progress class="modal-container-footer-estadisticas_barra barra-squirtle" max="203" value="43"></progress>
+              </div>
+                <ul class="contenedor-max">
+              <li class="modal-container-footer-estadisticas-max">292</li>
+              <li class="modal-container-footer-estadisticas-max">214</li>
+              <li class="modal-container-footer-estadisticas-max">251</li>
+              <li class="modal-container-footer-estadisticas-max">218</li>
+              <li class="modal-container-footer-estadisticas-max">249</li>
+              <li class="modal-container-footer-estadisticas-max">203</li>
+              <li class="modal-container-footer-estadisticas-max">Max</li>
+                </ul>
+            </article>
+  
+           </article>
+          </section>
+      </div>
+
+
+
+
+
+
+     <section id="modal-slider" class="modal" >
+
+      <section class="modal-container-slider">
+        
+        <img id="close-slider" class="modal-close" src="assets/img/arrow_back_black.png"></img>
+          <h2 class="modal-container-slider-titulo">Pokedex</h2>
+
+       <article class="modal-container-slider-img">
+          <input type="radio" name="slider-1" id="radio-1" checked autofocus > 
+          <input type="radio" name="slider-1" id="radio-2">
+          <input type="radio" name="slider-1" id="radio-3">
+          <input type="radio" name="slider-1" id="radio-4" checked >
+          <input type="radio" name="slider-1" id="radio-5" >
+          <input type="radio" name="slider-1" id="radio-6" >
+          <input type="radio" name="slider-1" id="radio-7" checked >
+          <input type="radio" name="slider-1" id="radio-8" >
+          <input type="radio" name="slider-1" id="radio-9" >
+          
+         <article class="cards" >
+          <label for="radio-1" id="card-1" class="card Bulbasaur">
+            <div class="titulo-cards">
+              <h2>Bulbasau</h2>
+              <p>#001</p>
+            </div>
+            <img src="assets/img/Bulbasaur.png" alt="Bulbasau">
+            <div class="tipo-cards">
+            <p class="modal-container-main-tipo_planta">Planta</p>
+            <p class="modal-container-main-tipo_veneno">Veneno</p>
+          </div>
+          </label>
+          <label for="radio-2" id="card-2" class="card Bulbasaur">
+            <div class="titulo-cards">
+              <h2>Ivysaur</h2>
+              <p>#002</p>
+            </div>
+            <img src="assets/img/Ivysaur.png" alt="Ivysaur ">
+            <div class="tipo-cards">
+              <p class="modal-container-main-tipo_planta">Planta</p>
+              <p class="modal-container-main-tipo_veneno">Veneno</p>
+            </div>
+          </label>
+          <label for="radio-3" id="card-3" class="card Bulbasaur">
+            <div class="titulo-cards">
+              <h2>Venusaur</h2>
+              <p>#003</p>
+            </div>
+            <img src="assets/img/Venusaur.png" alt="Venusaur">
+            <div class="tipo-cards">
+              <p class="modal-container-main-tipo_planta">Planta</p>
+              <p class="modal-container-main-tipo_veneno">Veneno</p>
+            </div>
+          </label>
+          </article>
+
+          <!-- Charmander    -->
+
+          <article class="cards">       
+          <label for="radio-4" id="card-4" class="card Charmander" >
+            <div class="titulo-cards">
+              <h2>Charmander</h2>
+              <p>#004</p>
+            </div>
+            <img src="assets/img/Charmander.png" alt="Charmander">
+            <div class="tipo-cards">
+              <p class="modal-container-main-tipo_fuego">fuego</p>
+            </div>
+          </label>
+          <label for="radio-5" id="card-5" class="card Charmander">
+            <div class="titulo-cards">
+              <h2>Charmeleon</h2>
+              <p>#005</p>
+            </div>
+            <img src="assets/img/Charmeleon.png" alt="Charmeleon">
+            <div class="tipo-cards">
+              <p class="modal-container-main-tipo_fuego">fuego</p>
+            </div>
+          </label>
+          <label for="radio-6" id="card-6" class="card Charmander">
+            <div class="titulo-cards">
+              <h2>Charizard</h2>
+              <p>#006</p>
+            </div>
+            <img src="assets/img/Charizard.png" alt="Charizard">
+            <div class="tipo-cards">
+              <p class="modal-container-main-tipo_fuego">fuego</p>
+              <p class="modal-container-main-tipo_vuelo" style="background: var(--pokmon-type-flying);">vuelo</p>
+            </div>
+          </label>
+          </article> 
+
+         <!--  squirtle    -->
+
+          <article class="cards">       
+          <label for="radio-7" id="card-7" class="card squirtle" >
+            <div class="titulo-cards">
+              <h2>squirtle</h2>
+              <p>#007</p>
+            </div>
+            <img src="assets/img/Squirtle.png" alt="squirtle">
+            <div class="tipo-cards">
+              <p class="modal-container-main-tipo_agua">agua</p>
+            </div>
+          </label>
+          <label for="radio-8" id="card-8" class="card squirtle">
+            <div class="titulo-cards">
+              <h2>Wartortle</h2>
+              <p>#008</p>
+            </div>
+            <img src="assets/img/Wartortle.png" alt="squirtle">
+            <div class="tipo-cards">
+              <p class="modal-container-main-tipo_agua">agua</p>
+            </div>
+          </label>
+          <label for="radio-9" id="card-9" class="card squirtle">
+            <div class="titulo-cards">
+              <h2>Blastoise</h2>
+              <p>#009</p>
+            </div>
+            <img src="assets/img/Blastoise.png" alt="Blastoise">
+            <div class="tipo-cards">
+              <p class="modal-container-main-tipo_agua">agua</p>
+            </div>
+          </label>
+        </article> 
+      </article> 
+     
+      </section>
+
+    </section> 
+    <div>
+  
+    <script src="assets/js/main.js"></script>
+  
+  </body>
+</html>
